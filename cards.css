@@ -1,0 +1,134 @@
+/* Card styling for players, rules, and mods */
+.card {
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+  /* Remove fixed width: width: 200px; */ 
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  background-color: #C6C6C6; /* Minecraft light stone color */
+  border: 2px solid #7E5D3F; /* Minecraft wood color */
+
+  /* Add animation properties */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(50px); /* Start off-screen */
+  animation: fadeInUp 0.5s ease-in-out forwards; /* Apply animation */
+}
+
+/* Define the animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add delay to each card to create a staggered effect */
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
+/* ... and so on for all cards */
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #3F3F3F;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #7E5D3F;
+  border-radius: 8px;
+}  
+
+/* Player styling */
+.player_alive, .player_dead {
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+  /* Remove fixed width: width: 200px; */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.player_alive {
+  background-color: #4AAA4A; /* Minecraft grass color */
+  border-color: #45874B;
+}
+
+.player_dead {
+  background-color: #AA4A4A; /* Minecraft redstone color */
+  border-color: #874545;
+}
+
+.player_alive h3, .player_dead h3 {
+  color: white;
+}
+
+.player_alive:hover, .player_dead:hover {
+  transform: scale(1.05);
+}
+
+.player_alive h3, .player_dead h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: white;
+}
+
+.player_alive img, .player_dead img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #7E5D3F;
+  border-radius: 8px;
+}
+
+.rule-card, .mod-card {
+  background-color: #f3e8d3; /* Minecraft sand color */
+}
+
+.rule-card img, .mod-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* Card Container styling */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */ 
+  gap: 20px;
+  justify-content: center; /* Center the grid on the page */
+}
+
+/* Responsive design for card container (adjust as needed) */
+@media (max-width: 768px) { 
+  .card-container {
+    grid-template-columns: repeat(5, 1fr); /* Maintain 5 columns */
+    gap: 10px; /* Reduce gap on smaller screens */
+  }
+}
+
+.clip-preview {
+  opacity: 0; /* Initially fully transparent */
+  position: absolute;       
+  background-color: rgba(0, 0, 0, 0.8); 
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 10;            /* Ensure it's above other elements */
+  transform: translate(-50%, -110%);  /* Position above the card */
+  left: 50%;              /* Center horizontally */ 
+  transition: opacity 0.3s ease-in-out;  /* Add a smooth fade transition */
+}
+
+.card:hover .clip-preview { 
+  opacity: 1;          /* Fully opaque on hover */
+}

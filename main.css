@@ -1,0 +1,194 @@
+/* Basic styling */
+body {
+  font-family: 'Minecraft', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #E0D0A8; /* Minecraft sand color */
+  color: #3F3F3F;
+  /* Add a subtle background texture */
+  background-image: url("minecraft_dirt_texture.jpg"); /* Replace with your texture image */
+  background-repeat: repeat;
+  background-size: 200px; /* Adjust size as needed */
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4AAA4A; /* Minecraft grass color */
+  color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  /* Add a subtle border to enhance the Minecraft look */
+  border-bottom: 4px solid #2E8B57; /* Darker green for the border */
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-shadow: 2px 2px #45874B;
+}
+
+.action-button {
+  background-color: #7E5D3F; /* Minecraft wood color */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 4px;
+  /* Add a subtle texture to the button */
+  background-image: url("minecraft_wood_texture.jpg"); /* Replace with your texture image */
+  background-repeat: repeat;
+  background-size: 50px; /* Adjust size as needed */
+}
+
+.action-button:hover {
+  background-color: #5C4330;
+  transform: scale(1.05);
+}
+
+/* Timer section styling */
+.timer-section {
+  background-color: #8B8B8B; /* Minecraft stone color */
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-top: 4px solid #686868;
+  border-bottom: 4px solid #686868;
+  /* Add a subtle texture to the timer section */
+  background-image: url("minecraft_stone_texture.jpg"); /* Replace with your texture image */
+  background-repeat: repeat;
+  background-size: 100px; /* Adjust size as needed */
+}
+
+.timer {
+  font-size: 2em;
+  color: #FFFFFF;
+  text-shadow: 2px 2px #000000;
+}
+
+/* Event details styling */
+.event-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to right, #E0D0A8, #D5C39C); /* Sand gradient */
+}
+
+.event-details h2 {
+  margin-bottom: 10px;
+  color: #7E5D3F; /* Minecraft wood color */
+}
+
+.event-details p {
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+.event-details img {
+  max-width: 50%;
+  height: auto;
+  border: 4px solid #7E5D3F;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+  }
+
+  .event-details img {
+      max-width: 80%;
+  }
+
+  .tab-nav {
+      flex-direction: column;
+  }
+
+  .tab {
+      margin: 5px 0;
+  }
+
+  /* Adjust card container for smaller screens */
+  .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+}
+
+/* Minecraft font (you'll need to provide this font file) */
+@font-face {
+  font-family: 'Minecraft';
+  src: url('minecraft_font.ttf') format('truetype');
+}
+
+/* Popup styling */
+.popup {
+  position: fixed;
+  bottom: 20px; /* Position at the bottom with some margin */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1000; 
+  opacity: 0; 
+  transition: opacity 0.5s ease; 
+}
+
+.popup.show {
+  opacity: 1;
+}
+
+.popup .timer {
+  font-size: 3em; /* Larger font for the popup */
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+/* Scroll button styling */
+#scrollButton {
+  position: fixed;
+  bottom: 30px; 
+  right: 30px; 
+  background-color: #7E5D3F; 
+  color: white;
+  border: none;
+  padding: 12px; 
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px; 
+  z-index: 999;
+  opacity: 0.7;             /* Always slightly visible */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#scrollButton:hover {
+  opacity: 1;               /* Fully opaque on hover */
+  transform: scale(1.1);   /* Only scale on hover */ 
+}
+
+#scrollButton.scroll-to-top::before { 
+  content: "▲"; 
+}
+
+#scrollButton.scroll-to-bottom::before {
+  content: "▼";
+}
+
+#scrollButton::before { 
+  content: "▼"; 
+}
