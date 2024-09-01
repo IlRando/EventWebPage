@@ -136,27 +136,3 @@ scrollButton.addEventListener('click', () => {
         });
     }
 });
-
-// Get all player card elements 
-const playerCards = document.querySelectorAll('.card.player_alive, .card.player_dead'); 
-
-playerCards.forEach(card => {
-  const clipPreview = card.querySelector('.clip-preview'); 
-  const iframe = clipPreview.querySelector('iframe'); 
-
-  // Add event listener for mouseover (hover)
-  card.addEventListener('mouseover', () => {
-    // Get the clip URL from the data-src attribute
-    const clipUrl = iframe.dataset.src; 
-
-    // Set the src attribute to load the clip
-    iframe.src = clipUrl; 
-  });
-
-  // Add event listener for mouseout (leaving the hover)
-  // (Optional: This will stop the clip when the mouse leaves the card)
-  card.addEventListener('mouseout', () => {
-    // Reset the src attribute to an empty string to stop the clip
-    iframe.src = ''; 
-  });
-});
