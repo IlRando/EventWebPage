@@ -9,6 +9,9 @@ body {
   background-image: url("minecraft_dirt_texture.jpg"); /* Replace with your texture image */
   background-repeat: repeat;
   background-size: 200px; /* Adjust size as needed */
+
+  /* Make sure nothing overflows on small screens */
+  overflow-x: hidden; 
 }
 
 /* Header styling */
@@ -107,10 +110,16 @@ h1 {
 @media (max-width: 768px) {
   header {
       flex-direction: column;
+      text-align: center;
+  }
+
+  .event-details {
+      flex-direction: column;
+      align-items: center; 
   }
 
   .event-details img {
-      max-width: 80%;
+      max-width: 90%;
   }
 
   .tab-nav {
@@ -191,4 +200,37 @@ h1 {
 
 #scrollButton::before { 
   content: "▼"; 
+}
+
+/* Media Query for Mobile Phones (generally screens smaller than 768px) */
+@media (max-width: 768px) { 
+
+  body {
+    /* Make sure nothing overflows on small screens */
+    overflow-x: hidden; 
+  }
+
+  header {
+    /* Stack header elements vertically on small screens */
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .event-details {
+    /* Adjust image width for smaller screens */
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .event-details img {
+    max-width: 90%; /* Image takes up almost full width on small screens */
+  }
+
+  .card-container {
+    /* Organize cards in a single column for smaller screens */
+    grid-template-columns: 1fr; /* One card per row */
+    gap: 10px;
+  }
+
+  /* Add more styles for other elements as needed */
 }
