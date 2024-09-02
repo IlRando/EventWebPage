@@ -54,20 +54,6 @@ h1 {
   transform: scale(1.05);
 }
 
-/* Timer section styling */
-.timer-section {
-  background-color: #8B8B8B; /* Minecraft stone color */
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-top: 4px solid #686868;
-  border-bottom: 4px solid #686868;
-  /* Add a subtle texture to the timer section */
-  background-image: url("minecraft_stone_texture.jpg"); /* Replace with your texture image */
-  background-repeat: repeat;
-  background-size: 100px; /* Adjust size as needed */
-}
-
 .timer {
   font-size: 2em;
   color: #FFFFFF;
