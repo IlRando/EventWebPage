@@ -1,5 +1,3 @@
-/* main.css */
-
 /* Basic styling */
 body {
   font-family: 'Minecraft', Arial, sans-serif;
@@ -109,7 +107,7 @@ h1 {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
   header {
       flex-direction: column;
       text-align: center;
@@ -134,7 +132,6 @@ h1 {
 
   /* Adjust card container for smaller screens */
   .card-container {
-      /* This makes the cards go below each other */
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
       gap: 10px;
   }
