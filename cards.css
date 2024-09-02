@@ -129,6 +129,9 @@
   transition: opacity 0.3s ease-in-out;  /* Add a smooth fade transition */
 }
 
-.card:hover .clip-preview { 
-  opacity: 1;          /* Fully opaque on hover */
+/* Target only non-touch devices for the hover effect */
+@media (hover: hover) { 
+  .card:hover .clip-preview { 
+    opacity: 1;          /* Fully opaque on hover */
+  }
 }
