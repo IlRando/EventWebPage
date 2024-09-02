@@ -9,9 +9,6 @@ body {
   background-image: url("minecraft_dirt_texture.jpg"); /* Replace with your texture image */
   background-repeat: repeat;
   background-size: 200px; /* Adjust size as needed */
-
-  /* Make sure nothing overflows on small screens */
-  overflow-x: hidden; 
 }
 
 /* Header styling */
@@ -107,19 +104,13 @@ h1 {
 }
 
 /* Responsive design */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   header {
       flex-direction: column;
-      text-align: center;
-  }
-
-  .event-details {
-      flex-direction: column;
-      align-items: center; 
   }
 
   .event-details img {
-      max-width: 90%;
+      max-width: 80%;
   }
 
   .tab-nav {
@@ -132,8 +123,9 @@ h1 {
 
   /* Adjust card container for smaller screens */
   .card-container {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-      gap: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
   }
 }
 
