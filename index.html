@@ -2,169 +2,196 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
-    <meta name="description" content="El evento más imponente del año.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina oficial de los Juegos de Latam, latam games official page">
     <meta name="keywords" content="Divier, elDivier, Juegos de latam, Latam games, Minecraft, evento Minecraft">
-    <meta name="author" content="RandoMike & Civer_Mau">
-    <title>No Man's Land</title>
+    <meta name="author" content="Civer_mau">
+    <title>Juegos de Latam III</title>
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="cards.css"> 
-    <link rel="icon" href="event-image.jpg">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="tabs.css">
+    <link rel="icon" href="http://127.0.0.1:5500/event-image.jpg">
 </head>
+
+
 <body>
-  <header> 
-    <div class="header-content"> 
-        <img src="divstudios-logo.png" alt="Divstudios Logo" class="logo"> 
-        <nav>
-            <ul>
-                <li><a href="Content/Eventos/eventos.html">Eventos</a></li>
-                <li><a href="Content/Quiénes Somos/aboutus.html">Quiénes somos</a></li>
-                <li><a href="Content/Integrantes/integrantes.html">Integrantes</a></li>
-                <li><a href="Content/Contacto/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-  </header>
+    <header>
+        <h1>Juegos de Latam III</h1>
+        <button class="action-button">¡Quiero participar!</button>
+    </header>
 
-  <section class="hero">
-    <div class="hero-content">
-        <h1><img src="minecraft-background.png" alt="No Man's Land Banner"></h1>
-        <p>¡Bienvenidos a la tierra de nadie! ¿Te crees capaz de conquistarla?</p>
-        <a href="https://x.com/DivStudioO/" target="_blank" class="action-button">SÍGUENOS EN TWITTER</a>
-        <a href="https://linktr.ee/randomaik" target="_blank" class="action-button secondary-button">¡Tenemos más redes!</a>
-    </div>
-  </section>
+    <section class="event-details">
+        <h2>Juegos de Latam III</h2>
+        <p>¡Bienvenidos a la tercera edición de Los Juegos de Latam! Prepárate para una aventura épica en Minecraft.</p>
+        <img src="event-image.jpg" alt="Imagen del evento Juegos de Latam III">
+    </section>
 
-  <section class="content-section">
-    <ul class="tabs">
-        <li class="tab active" data-target="#participantes">Participantes</li>
-        <li class="tab" data-target="#reglas">Reglas</li>
-        <li class="tab" data-target="#mods">Mods</li>
-        <li class="tab" data-target="#informacion">Información general</li>
-    </ul>
-
-    <div class="tab-content">
-        <div id="participantes" class="tab-panel active"> 
-            <div class="card-container"> 
-                <div class="card player_alive"> 
-                    <img src="Images/Randomike.png" alt="RandoMike">
-                    <div class="player-info">
-                        <h3>RandoMike</h3>
-                        <p>"¡Ponme putas, por favor!"</p> 
+    <section class="tabs">
+        <ul class="tab-nav">
+            <li class="tab active">Participantes</li>
+            <li class="tab">Reglas</li>
+            <li class="tab">Mods</li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-panel active">
+                <div class="card-container"> 
+                    <div class="card player_alive">
+                        <h3>Randomike</h3>
+                        <img src="Images/Randomike.png" alt="Randomike">
+                        <div class="clip-preview"> 
+                            <iframe 
+                                src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
+                                height="200" 
+                                width="300" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
-                    <div class="clip-preview"> 
-                        <iframe 
-                            src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
-                            height="200" 
-                            width="300" 
-                            allowfullscreen>
-                        </iframe>
+                    <div class="card player_dead">
+                        <h3>Divier</h3>
+                        <img src="Images/Divier.png" alt="Divier">
+                        <div class="clip-preview"> 
+                            <iframe 
+                                src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
+                                height="200" 
+                                width="300" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card player_alive"> 
-                    <img src="Images/Divier.png" alt="Divier">
-                    <div class="player-info">
-                        <h3>El Divier</h3>
-                        <p>"Me funan por todo"</p> 
+                    <div class="card player_dead">
+                        <h3>Lord_M4</h3>
+                        <img src="Images/LordM4.png" alt="Lord_M4">
+                        <div class="clip-preview"> 
+                            <iframe 
+                                src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
+                                height="200" 
+                                width="300" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
-                    <div class="clip-preview"> 
-                        <iframe 
-                            src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
-                            height="200" 
-                            width="300" 
-                            allowfullscreen>
-                        </iframe>
+                    <div class="card player_alive"> 
+                        <h3>Erihuson</h3>
+                        <img src="Images/EriHudson.png" alt="EriHudson">
+                        <div class="clip-preview"> 
+                            <iframe 
+                                src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
+                                height="200" 
+                                width="300" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card player_dead"> 
-                    <img src="Images/DonAndriuw.png" alt="DonAndriuw">
-                    <div class="player-info">
-                        <h3>Don Andriuw</h3>
-                        <p>"Me gusta Mau"</p> 
-                    </div>
-                    <div class="clip-preview"> 
-                        <iframe 
-                            src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
-                            height="200" 
-                            width="300" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="card player_alive"> 
-                    <img src="Images/EriHudson.png" alt="EriHudson">
-                    <div class="player-info">
-                        <h3>EriHudson</h3>
-                        <p>"Croissant"</p> 
-                    </div>
-                    <div class="clip-preview"> 
-                        <iframe 
-                            src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
-                            height="200" 
-                            width="300" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="card player_alive"> 
-                    <img src="Images/LobitoGamer.png" alt="LobitoGamer">
-                    <div class="player-info">
+                    <div class="card player_alive">
                         <h3>Lobito</h3>
-                        <p>"Ae"</p> 
+                        <img src="Images/LobitoGamer.png" alt="LobitoGamer">
+                        <div class="clip-preview"> 
+                            <iframe 
+                                src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
+                                height="200" 
+                                width="300" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
-                    <div class="clip-preview"> 
-                        <iframe 
-                            src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
-                            height="200" 
-                            width="300" 
-                            allowfullscreen>
-                        </iframe>
+                    <div class="card player_dead">
+                        <h3>Pinguino del sexo</h3>
+                        <img src="Images/DonAndriuw.png" alt="DonAndriuw">
+                        <div class="clip-preview"> 
+                            <iframe 
+                                src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
+                                height="200" 
+                                width="300" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card player_dead"> 
-                    <img src="Images/LordM4.png" alt="LordM4">
-                    <div class="player-info">
-                        <h3>LordM4</h3>
-                        <p>"Puta"</p> 
+                    <div class="card player_alive">
+                        <h3>Randomike</h3>
+                        <img src="Images/Randomike.png" alt="Randomike">
+                        <div class="clip-preview"> 
+                            <iframe 
+                                src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
+                                height="200" 
+                                width="300" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
-                    <div class="clip-preview"> 
-                        <iframe 
-                            src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
-                            height="200" 
-                            width="300" 
-                            allowfullscreen>
-                        </iframe>
+                    <div class="card player_dead">
+                        <h3>Divier</h3>
+                        <img src="Images/Divier.png" alt="Divier">
+                        <div class="clip-preview"> 
+                            <iframe 
+                                src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
+                                height="200" 
+                                width="300" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="card player_dead">
+                        <h3>Lord_M4</h3>
+                        <img src="Images/LordM4.png" alt="Lord_M4">
+                        <div class="clip-preview"> 
+                            <iframe 
+                                src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
+                                height="200" 
+                                width="300" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="card player_alive">
+                        <h3>Erihuson</h3>
+                        <img src="Images/EriHudson.png" alt="Lord_M4">
+                        <div class="clip-preview"> 
+                            <iframe 
+                                src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
+                                height="200" 
+                                width="300" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="card player_alive">
+                        <h3>Lobito</h3>
+                        <img src="Images/LobitoGamer.png" alt="Lord_M4">
+                        <div class="clip-preview"> 
+                            <iframe 
+                                src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
+                                height="200" 
+                                width="300" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="card player_dead">
+                        <h3>Pinguino del sexo</h3>
+                        <img src="Images/DonAndriuw.png" alt="Lord_M4">
+                        <div class="clip-preview"> 
+                            <iframe 
+                                src="https://clips.twitch.tv/embed?clip=OutstandingMistyTigerLitFam-4BN5O1CUQrhDLGES&parent=ilrando.github.io&autoplay=true&muted=false" 
+                                height="200" 
+                                width="300" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
                 </div> 
             </div>
+
+            <div class="tab-panel">
+                </div>
+
+            <div class="tab-panel">
+                </div>
         </div>
+    </section>
 
-        <div id="reglas" class="tab-panel">
-            </div>
-
-        <div id="mods" class="tab-panel">
-            </div>
-
-        <div id="informacion" class="tab-panel">
-            </div>
-    </div>
-</section>
-
-  <footer>
-    <p>© 2024 DivStudios. Todos los derechos reservados</p>
-  </footer>
-
-  <button id="scrollButton"></button> 
-  <script src="script.js"></script>
+    <button id="scrollButton"></button> 
+    <script src="script.js"></script>
 </body>
 </html>
