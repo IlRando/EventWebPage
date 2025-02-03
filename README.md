@@ -1,4 +1,4 @@
-# 🌌 RandoMike
+# 🌌 Divstudio
 
 ¡Bienvenido a la primerísima versión de la página para Divstudio!
 
